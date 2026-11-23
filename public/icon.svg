@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="96" fill="#181C26"/>
+  <rect x="44" y="120" width="424" height="272" rx="28" fill="#CDD4DE"/>
+  <rect x="60" y="136" width="392" height="240" rx="20" fill="#1E222C"/>
+  <rect x="82" y="158" width="348" height="150" rx="12" fill="#F28422"/>
+  <rect x="92" y="168" width="328" height="42" rx="6" fill="#F8F4E8"/>
+  <rect x="132" y="218" width="248" height="74" rx="10" fill="#14181E"/>
+  <circle cx="192" cy="255" r="28" fill="#E2E8F0"/>
+  <circle cx="192" cy="255" r="14" fill="#1E222C"/>
+  <circle cx="320" cy="255" r="28" fill="#E2E8F0"/>
+  <circle cx="320" cy="255" r="14" fill="#1E222C"/>
+  <path d="M138 334h236l14 42H124l14-42z" fill="#12151C"/>
+  <circle cx="186" cy="356" r="10" fill="#F28422"/>
+  <circle cx="326" cy="356" r="10" fill="#F28422"/>
+  <text x="256" y="196" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="22" letter-spacing="3" fill="#1E222C">SS PLAYMAN</text>
+</svg>

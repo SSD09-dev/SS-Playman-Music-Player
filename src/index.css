@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html,
+  body {
+    font-family: var(--font-sans);
+    background-color: #11141b;
+    color: #e6e9ef;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior-y: contain;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-lcd {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Brushed aluminum Walkman top plate & trim */
+.brushed-metal {
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      rgba(0, 0, 0, 0.025) 1px,
+      rgba(0, 0, 0, 0.025) 3px
+    ),
+    linear-gradient(
+      180deg,
+      #e2e6ec 0%,
+      #c8cfd8 28%,
+      #b5bec9 68%,
+      #c7cdd6 100%
+    );
+}
+
+.brushed-metal-dark {
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.015) 0px,
+      rgba(255, 255, 255, 0.015) 1px,
+      rgba(0, 0, 0, 0.04) 1px,
+      rgba(0, 0, 0, 0.04) 3px
+    ),
+    linear-gradient(
+      180deg,
+      #2b313d 0%,
+      #1e232c 55%,
+      #181c24 100%
+    );
+}
+
+/* Engraved hardware stamp effect */
+.engraved-stamp {
+  color: #1c212b;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.65),
+    0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.engraved-sub {
+  color: #363e4d;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+/* Retro dot-matrix LCD panel */
+.lcd-panel-amber {
+  background: radial-gradient(circle at 50% 35%, #2b210d 0%, #171207 100%);
+  box-shadow:
+    inset 0 2px 8px rgba(0, 0, 0, 0.9),
+    inset 0 0 18px rgba(245, 158, 11, 0.14),
+    0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.lcd-panel-green {
+  background: radial-gradient(circle at 50% 35%, #1d2a1b 0%, #0e160d 100%);
+  box-shadow:
+    inset 0 2px 8px rgba(0, 0, 0, 0.9),
+    inset 0 0 18px rgba(132, 204, 22, 0.14),
+    0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.lcd-dot-grid {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.35) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+/* 3D Cassette perspective utilities */
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Spinning cassette hubs */
+@keyframes reelSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.reel-spinning {
+  animation: reelSpin 2.4s linear infinite;
+}
+
+.reel-spinning-fast {
+  animation: reelSpin 0.45s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reel-spinning,
+  .reel-spinning-fast {
+    animation: none;
+  }
+}
+
+/* Custom subtle scrollbars for drawers and shelf */
+.hardware-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.hardware-scroll::-webkit-scrollbar-track {
+  background: rgba(15, 18, 24, 0.5);
+}
+.hardware-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 3px;
+}
+.hardware-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.55);
+}

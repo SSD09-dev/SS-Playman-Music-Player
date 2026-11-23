@@ -1,0 +1,6 @@
+{
+  "name": "SS Playman",
+  "description": "Standalone retro portable cassette & Walkman-inspired ad-free music player.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
